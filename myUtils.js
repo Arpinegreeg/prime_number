@@ -15,5 +15,9 @@ module.exports = {
 		}
 
 		return true;
+	},
+	printArray: function(array) {
+		for(i=0; i<array.length; i++)
+			process.stdout.write(array[i].toString() + " ");
 	}
-}
+};

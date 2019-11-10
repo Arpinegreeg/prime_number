@@ -1,4 +1,13 @@
+const reader = require('readline-sync');
 const util = require("./myUtils.js");
 
-console.log(util.isPrime(2));
+first = reader.question("Please input first number: ");
+second = reader.question("Please input second number: ");
 
+array = [];
+for(i=first; i<=second; i++)
+{
+    if(util.isPrime(i))
+        array.push(i);
+}
+util.printArray(array);
