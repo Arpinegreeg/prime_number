@@ -5,7 +5,7 @@ first = reader.question("Please input first number: ");
 second = reader.question("Please input second number: ");
 
 array = [];
-for(i=first; i<=second; i++)
+for(let i=first; i<=second; i++)
 {
     if(util.isPrime(i))
         array.push(i);
